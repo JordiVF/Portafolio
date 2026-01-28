@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jordi Varo | Portfolio DAW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+  <figure class="logo">
+    <img src="/img/Logo JordiVF.png" alt="Logo JordiVF">
+    <figcaption>JordiVF</figcaption>
+  </figure>
+
+  <nav class="nav">
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+</header>
+
+<main class="main">
+
+  <section class="hero">
+    <article class="hero-content">
+      <h2>Desarrollador Web Junior</h2>
+      <p>
+        Estudiante de Desarrollo de Aplicaciones Web con enfoque en frontend y backend.
+        <br> Me gusta crear aplicaciones modernas, eficientes y bien estructuradas.
+      </p>
+    </article>
+
+    <figure class="hero-image">
+      <img src="img/Captura de pantalla 2025-12-19 151629.png" alt="Foto de perfil">
+    </figure>
+  </section>
+
+  <hr class="neon-separator">
+
+  <section id="about" class="about">
+    <header>
+      <h2>Sobre mí</h2>
+    </header>
+
+    <p>
+      Graduado de DAM y actualmente cursando segundo año de DAW para completar mis estudios como desarrollador FullStack.
+    </p>
+  </section>
+
+  <hr class="neon-separator thin">
+
+  <section id="projects" class="projects">
+    <header>
+      <h2>Proyectos</h2>
+    </header>
+
+    <section class="projects-grid">
+
+      <article class="card">
+        <header>
+          <h3>SmartFleet</h3>
+        </header>
+        <p>Aplicación de Escritorio de un sistema de gestion de flotas de vehiculos, desarrollado en C# y WPF.</p>
+        <footer class="card-actions">
+          <a href="https://github.com/JordiVF/SmartFleet">GitHub</a>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Japanda (WIP)</h3>
+        </header>
+        <p>Aplicacion Web de un Ecommerce, desarrollado en React y Express</p>
+        <footer class="card-actions">
+          <a href="#">GitHub</a>
+        </footer>
+      </article>
+
+    </section>
+  </section>
+
+  <hr class="neon-separator">
+
+  <section id="skills" class="skills">
+    <header>
+      <h2>Skills</h2>
+    </header>
+
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git / GitHub</li>
+      <li>PostgreSQL</li>
+      <li>C#</li>
+      <li>Kotlin</li>
+    </ul>
+  </section>
+
+  <hr class="neon-separator thin">
+
+    <section id="contact" class="contact">
+    <header>
+        <h2>Contacto</h2>
+    </header>
+
+    <form class="contact-form" id="portfolioForm">
+
+      <fieldset>
+        <label>
+            <span>Nombre</span>
+            <input type="text" name="nombre" required>
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+    </fieldset>
+
+    <button type="submit" id="botonEnviar">
+      <span id="iconoCarga" class="spinner"></span>
+      <span id="textoBoton">Enviar mensaje</span>
+  </button>
+    <p id="estadoFormulario"></p>
+
+    </form>
+    </section>
+</main>
+<script src="/js/index.js"></script>
+</body>
+</html>
